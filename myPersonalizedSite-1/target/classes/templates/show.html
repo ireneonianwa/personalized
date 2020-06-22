@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Personal Site</title>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1 class="display-3">Thank You!</h1>
+  <p class="lead"><strong>I will be in contact shortly</strong> </p>
+  <hr>
+
+	<h4>Contact information submitted:</h4>
+	<p th:text="${name}" />
+	<p th:text="${email}" />
+	<p th:text="${message}" />
+	
+	  <p class="lead">
+	  
+	  <!-- Need to link back to main homepage -->
+    <a class="btn btn-primary btn-sm" href="templates/index.html" role="button">Back to Homepage</a>
+    
+  </p>
+</div>
+</body>
+</html>
